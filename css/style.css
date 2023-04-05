@@ -6,10 +6,10 @@
 }
 
 #instagram-logo {
-    margin-top: 35px;
+    margin-top: 3vh;
     margin-left: 20px;
-    margin-bottom: 40px;
-    width: 110px;
+    margin-bottom: 4vh;
+    width: 11vh;
 }
 
 .mrx {
@@ -17,14 +17,17 @@
     width: 100%;
 }
 
-.navigation-div > ul > li > button, .more {
+.navigation-div {
+    height: 89vh;
+}
+
+.navigation-div > ul > li > button {
     padding: 10px;
-    width: 94%;
-    text-align: start;
+    width: 92%;
+    text-align: left;
     border-radius: 20px;
     margin-bottom: 10px;
     margin-left: 4%;
-    margin-right: 2%;
 }
 
 .navigation-div > ul > li > button > svg {
@@ -33,11 +36,119 @@
     margin-right: 5px;
 }
 
-.more {
-    margin-bottom: 30px;
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
 }
-.more > svg {
-    height: 1.5em;
-    width: 1.5em;
-    margin-right: 5%;
+
+.main-buttons-text {
+    display: inline;
+}
+
+.sugestions {
+    padding-top: 4vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    /*padding-right: 12%;*/
+}
+
+.main-section {
+    padding-left: 5%;
+}
+
+.max-width {
+    max-width: 400px;
+}
+
+.follow-link, .switch {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.follow-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.suggestions-text {
+    font-size: 15px;
+}
+
+.see-all {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.see-all:hover {
+    color: gray;
+}
+
+.links {
+    font-size: 12px;
+    color: gray;
+}
+
+.text-gray {
+    font-size: 13px;
+    color: gray;
+}
+
+.text-gray2 {
+    font-size: 14px;
+    color: gray;
+}
+
+.hover-effect:hover {
+    cursor: pointer;
+}
+
+.links > nav > ul > li {
+    display: inline;
+}
+
+.links > nav > ul > li > a {
+    display: inline;
+    text-decoration: none;
+    color: gray;
+}
+
+.links > nav > ul > li > a:hover {
+    display: inline;
+    text-decoration: underline;
+    color: gray;
+}
+
+.small-photo {
+    width: 35px;
+    height: 35px;
+}
+
+.margin-sifirla2 {
+    background-color: red;
+}
+
+.margin-sifirla div {
+    background-color: yellow;
+}
+@media screen and (max-width: 1200px) {
+    .sugestions {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .main-buttons {
+        border-radius: 100%;
+        background-color: red;
+    }
+
+    .main-buttons-text {
+        display: none;
+    }
+
+    .more {
+        width: 75% !important;
+    }
 }
