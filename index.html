@@ -11,14 +11,15 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <section class="col-1 col-lg-2 m-0 p-0">
+            <section class="col-1 fixed-top col-lg-2 m-0 p-0">
                 <div class="sticky-top">
                     <section class="bg-warning mrx">
                         <div>
-                            <img id="instagram-logo" src="./img/instagram-logo.png" alt="instagram logo">
+                            <img class="d-none d-lg-inline" id="instagram-logo" src="./img/instagram-logo.png" alt="instagram logo">
+                            <svg class="d-inline d-lg-none" id="instagram-logo2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"></path></svg>
                         </div>
-                        <div class="navigation-div bg-success">
-                            <ul class="d-flex d-lg-block flex-column bg-info h-100 position-relative align-items-center list-unstyled w-100">
+                        <div class="navigation-div">
+                            <ul class="d-flex d-lg-block flex-column h-100 position-relative align-items-center list-unstyled w-100">
                                 <li>
                                     <button class="main-buttons">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"></path></svg>
@@ -96,7 +97,142 @@
                     </section>
                 </div>
             </section>
-            <section class="col-9 offset-1 main-section col-lg-6 bg-success">Lorem ipsum dolor sit amet cusandae, unde dolores modi! Veniam aliquid perspiciatis ex illo enim? Beatae, doloremque rem nesciunt in hic officiis consequuntur. Voluptates mollitia debitis, qui fugiat voluptatum veritatis quasi maxime, dicta dolores error quis, iusto id quisquam aliquid possimus.</section>
+            <section class="col-9 offset-3 main-section col-lg-6 bg-success pt-2">
+                <section id="status-section" class="d-flex justify-content-center mb-5">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner pt-1">
+                          <div class="carousel-item active status pt-3">
+                            <div class="d-flex bg-danger">
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic6.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic5.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic3.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic2.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic1.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic2.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic4.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic3.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic5.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item pt-3 status">
+                            <div class="d-flex">
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic6.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic4.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic3.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic2.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic1.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic2.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic5.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic3.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic5.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item pt-3 status">
+                            <div class="d-flex">
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic6.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic4.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic3.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic2.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic1.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic2.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic5.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic3.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                                <div class="status-profile-div mx-2">
+                                    <img class="status-photo" src="./img/pic5.jpg" alt="">
+                                    <p class="status-name">milyazkamil</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm104 316.9c0 10.2-4.9 19.9-13.2 25.9L457.4 512l145.4 105.2c8.3 6 13.2 15.6 13.2 25.9V690c0 6.5-7.4 10.3-12.7 6.5l-246-178a7.95 7.95 0 0 1 0-12.9l246-178a8 8 0 0 1 12.7 6.5v46.8z"></path></svg>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm154.7 454.5l-246 178c-5.3 3.8-12.7 0-12.7-6.5v-46.9c0-10.2 4.9-19.9 13.2-25.9L566.6 512 421.2 406.8c-8.3-6-13.2-15.6-13.2-25.9V334c0-6.5 7.4-10.3 12.7-6.5l246 178c4.4 3.2 4.4 9.8 0 13z"></path></svg>
+                        </button>
+                      </div>
+                </section>
+
+                
+            </section>
             <section class="col-3 d-none d-md-block bg-info sugestions m-0">
                 <div class="max-width">
                     <div class="d-flex justify-content-between align-items-center mb-3 hover-effect">

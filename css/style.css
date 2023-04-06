@@ -12,6 +12,24 @@
     width: 11vh;
 }
 
+#instagram-logo2 {
+    margin-top: 3vh;
+    margin-left: 20px;
+    margin-bottom: 4vh;
+    height: 2.5em;
+    width: 2.5em; 
+}
+
+.carousel-control-prev, .carousel-control-next {
+    margin: 0 20px;
+    width: 50px;
+}
+
+.carousel-control-prev > svg, .carousel-control-next > svg {
+    width: 2em;
+    height: 2em;
+}
+
 .mrx {
     height: 100vh;
     width: 100%;
@@ -53,12 +71,37 @@
     /*padding-right: 12%;*/
 }
 
-.main-section {
-    padding-left: 5%;
-}
-
 .max-width {
     max-width: 400px;
+}
+
+#carouselExample, .status {
+    height: 100px;
+}
+
+.status {
+    padding: 0 30px;
+}
+
+.status-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+#status-section {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 800px;
+}
+
+.status-name {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
 }
 
 .follow-link, .switch {
@@ -130,6 +173,23 @@
 .margin-sifirla div {
     background-color: yellow;
 }
+
+#posts-section {
+    padding: 0 20%;
+    background-color: aqua;
+}
+
+#post1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 75vh;
+    border: 1px solid black;
+}
+
+.post1-picture {
+    width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
     .sugestions {
         padding-left: 3%;
