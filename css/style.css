@@ -5,41 +5,78 @@
     font-family: sans-serif;
 }
 
-#instagram-logo {
-    margin-top: 3vh;
-    margin-left: 20px;
-    margin-bottom: 4vh;
-    width: 11vh;
+html::-webkit-scrollbar {
+    width: 10px;
+}
+   
+html::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(83, 83, 83);
+    border-radius: 10px;
 }
 
-#instagram-logo2 {
-    margin-top: 3vh;
-    margin-left: 20px;
-    margin-bottom: 4vh;
-    height: 2.5em;
-    width: 2.5em; 
+body {
+    transition: all 1s;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    margin: 0 20px;
-    width: 50px;
+/*START Header Section*/
+.header-div {
+    background-color: #FFFFFF;
+    height: 70px;
+    border-bottom: 1px solid rgb(204, 204, 204);;
 }
 
-.carousel-control-prev > svg, .carousel-control-next > svg {
-    width: 2em;
-    height: 2em;
+#logo-black-min {
+    width: 13vh;
+    cursor: pointer;
 }
 
-.mrx {
+#search {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: none;
+    background-color: #EFEFEF;
+    width: 40%;
+    max-width: 350px;
+    min-width: 150px;
+}
+/*END Header Section*/
+
+
+/*START Navbar Section*/
+.navbar-section {
     height: 100vh;
     width: 100%;
+    border-right: 1px solid rgb(182, 182, 182, 0.5);
+}
+
+#logo-black {
+    margin-top: 3vh;
+    margin-left: 20px;
+    margin-bottom: 4vh;
+    width: 13vh;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#instagram-logo {
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    height: 2.5em;
+    transition: all 0.8s;
+    cursor: pointer;
 }
 
 .navigation-div {
     height: 89vh;
 }
 
-.navigation-div > ul > li > button {
+.navigation-div > ul > li > button, .navigation-div-2 > ul > li > button {
     padding: 10px;
     width: 92%;
     text-align: left;
@@ -48,10 +85,190 @@
     margin-left: 4%;
 }
 
-.navigation-div > ul > li > button > svg {
-    height: 1.5em;
-    width: 1.5em;
-    margin-right: 5px;
+.navbar-buttons {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-buttons:hover {
+    background-color: #FAFAFA;
+}
+
+.icons-size, .more-div {
+    max-width: 40px;
+    min-width: 40px;
+    min-height: 30px;
+}
+
+.navigation-icon, .more-icon {
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-buttons-text {
+    display: inline;
+    transition: all 1s;
+    color: black;
+}
+
+.dropdown {
+    height: 300px;
+    min-width: 250px;
+    width: 75%;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+}
+
+.li-radius-1 {
+    border-radius: 10px 10px 0 0;
+}
+
+.li-radius-2 {
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown > ul {
+    height: 100%;
+    width: 100%;
+}
+
+.dropdown > ul > li {
+    margin: 6% 0;
+    cursor: pointer;
+    height: 43px;
+}
+
+.dropdown > ul > li:hover {
+    background-color: #FAFAFA;
+}
+
+.dropdown-li {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.text-color {
+    color: black
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+/*END Navbar Section*/
+
+
+/*START Post Section*/
+#status-section {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#carouselExample, .status {
+    height: 100px;
+}
+
+.carousel-control-prev {
+    padding-bottom: 5px;
+    margin-left: 3%;
+    width: 50px;
+}
+
+.carousel-control-next {
+    padding-bottom: 5px;
+    margin-right: 3%;
+    width: 50px;
+}
+
+.carousel-control-prev > svg, .carousel-control-next > svg {
+    width: 2em;
+    height: 2em;
+}
+
+.slide {
+    width: 800px;
+}
+
+.status {
+    padding: 0 30px;
+}
+
+.status > div > div > p {
+    color: black;
+}
+
+.status-profile-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.status-photo {
+    width: 80%;
+    max-width: 65px;
+    min-width: 55px;
+    border-radius: 100%;
+}
+
+.status-name {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 65px;
+    font-size: 13px;
+}
+
+#posts-section svg {
+    cursor: pointer;
+}
+
+#post-1, #post-2, #post-3, #post-4 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.comment {
+    border-bottom: 1px solid rgb(227, 226, 226);
+}
+
+.profile-picture-div {
+    width: 220px;
+    height: 50px;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.post-border {
+    border: 1px solid rgb(227, 226, 226);
+    border-radius: 5px;
+}
+
+.post-photo {
+    width: 100%;
+    border-radius: 10px;
+}
+/*END Post Section*/
+
+
+/*START Suggestions Section*/
+.suggestions {
+    padding-top: 4vh;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.suggestions-width {
+    max-width: 300px;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
 }
 
 .profile-photo {
@@ -60,48 +277,13 @@
     border-radius: 100%;
 }
 
-.main-buttons-text {
-    display: inline;
+.font-size {
+    font-size: 14px;
 }
 
-.sugestions {
-    padding-top: 4vh;
-    padding-left: 2%;
-    padding-right: 2%;
-    /*padding-right: 12%;*/
-}
-
-.max-width {
-    max-width: 400px;
-}
-
-#carouselExample, .status {
-    height: 100px;
-}
-
-.status {
-    padding: 0 30px;
-}
-
-.status-photo {
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-}
-
-#status-section {
-    margin: 0 auto;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slide {
-    width: 800px;
-}
-
-.status-name {
-    color: rgb(255, 255, 255);
-    font-size: 13px;
+.text-gray-2 {
+    font-size: 14px;
+    color: gray;
 }
 
 .follow-link, .switch {
@@ -110,7 +292,7 @@
 }
 
 .follow-link:hover {
-    color: rgb(255, 255, 255);
+    color: #37628B;
 }
 
 .suggestions-text {
@@ -126,6 +308,11 @@
     color: gray;
 }
 
+.small-photo {
+    width: 35px;
+    height: 35px;
+}
+
 .links {
     font-size: 12px;
     color: gray;
@@ -134,15 +321,6 @@
 .text-gray {
     font-size: 13px;
     color: gray;
-}
-
-.text-gray2 {
-    font-size: 14px;
-    color: gray;
-}
-
-.hover-effect:hover {
-    cursor: pointer;
 }
 
 .links > nav > ul > li {
@@ -160,55 +338,54 @@
     text-decoration: underline;
     color: gray;
 }
+/*END Suggestions Section*/
 
-.small-photo {
-    width: 35px;
-    height: 35px;
+
+/*START Bottom Navbar Section*/
+.bottom-buttons {
+    background-color: #FFFFFF;
+    height: 65px;
+    border-top: 1px solid rgb(204, 204, 204);
 }
 
-.margin-sifirla2 {
-    background-color: red;
+.navigation-div-2-width {
+    width: 90%;
 }
+/*END Bottom Navbar Section*/
 
-.margin-sifirla div {
-    background-color: yellow;
-}
 
-#posts-section {
-    padding: 0 20%;
-    background-color: aqua;
-}
-
-#post1 {
-    margin: 0 auto;
-    width: 100%;
-    height: 75vh;
-    border: 1px solid black;
-}
-
-.post1-picture {
-    width: 100%;
-}
-
+/*START Responsive Section*/
 @media screen and (max-width: 1200px) {
-    .sugestions {
+    .suggestions {
         padding-left: 3%;
         padding-right: 3%;
     }
 }
 
-
 @media screen and (max-width: 992px) {
-    .main-buttons {
-        border-radius: 100%;
-        background-color: red;
-    }
-
-    .main-buttons-text {
-        display: none;
+    #post-1, #post-2, #post-3, #post-4 {
+        margin: 0 auto;
+        width: 80%;
     }
 
     .more {
-        width: 75% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
     }
 }
+
+@media screen and (max-width: 762px) {
+    #post-1, #post-2, #post-3, #post-4 {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #post-1, #post-2, #post-3, #post-4 {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+/*END Responsive Section*/
